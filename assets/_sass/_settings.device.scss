@@ -1,6 +1,15 @@
 @include media-query($on-laptop) {
   #banner {
     height: 230px;
+
+	svg{
+	  top:50px!important;
+	  transform: initial!important;
+	  -webkit-transform: initial!important;
+	  -ms-transform:initial!important;
+	  left: 29%!important;
+	}
+	
   }
   
   #storybookgif{
@@ -19,13 +28,7 @@
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 	
-	svg{
-	  top:50px!important;
-	  transform: initial!important;
-	  -webkit-transform: initial!important;
-	  -ms-transform:initial!important;
-	  left: 29%!important;
-	}
+
   }
 }
 @include media-query($on-palm) {
@@ -33,17 +36,21 @@
     display: block;
     float: none;
   }
+  
   #banner {
     height: 180px;
+	
+	.wrapper svg{
+		top: 20px!important;
+		left: 30%!important;
+	}
   }
+  
   .post-title {
 	max-width: 100%;
   }
   
-  .wrapper svg{
-    top: 20px!important;
-	left: 30%!important;
-  }
+
   
   #blog .wrapper {
     background: url(../images/cloud.png) 5% bottom no-repeat;
